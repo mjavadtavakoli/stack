@@ -5,21 +5,37 @@
 
 work flow : 
 
-           ┌──────────────┐
-           │   main()     │
-           └──────┬───────┘
-                  │
-                  v
-        ┌──────────────────┐
-        │   Stacker[int]   │
-        └────────┬─────────┘
-                 │
-                 v
-         ┌─────────────────┐
-         │   stack[int]    │
-         └────────┬────────┘
-                  │
-                  v
-        ┌──────────────────┐
-        │   []int slice    │
-        └──────────────────┘
+START
+ |
+ v
+NewStack()
+ |
+ v
+Create stack struct
+ |
+ v
+Create empty slice
+ |
+ v
+Return pointer
+ |
+ v
+main stores it
+ |
+ v
+Push
+ |
+ v
+append
+ |
+ v
+Pop
+ |
+ v
+check empty
+ |
+ v
+return value
+ |
+ v
+END
