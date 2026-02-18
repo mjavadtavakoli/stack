@@ -14,9 +14,11 @@ type Stacker[T any] interface {
 }
 
 // Stack structure
-type stack[T any] struct {
-	data []T
-}
+type (
+	stack[T any] struct {
+		data []T
+	}
+)
 
 // Constructor
 func NewStack[T any]() Stacker[T] {
@@ -65,4 +67,6 @@ func main() {
 	fmt.Println(s.Pop())
 	fmt.Println(s.Pop())
 	fmt.Println(s.Pop()) // will return error
+	fmt.Println(s.Pop())
+
 }
